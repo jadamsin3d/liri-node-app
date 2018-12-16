@@ -160,17 +160,17 @@ function DoWhatItSays() {
         if (error) {
             return console.log(error);
         }
-        var dataArr = data.split(","); 
+        var dataArr = data.split(",");
         answer = dataArr[1];
 
-        if(dataArr[0] === "spotify-this-song") {
+        if (dataArr[0] === "spotify-this-song") {
             SongLookUp();
         }
-        else if(dataArr[0] === "concert-this") {
-                BandLookUp();
-            }
-        else if(dataArr[0] === "movie-this") {
-                MovieLookUp();
+        else if (dataArr[0] === "concert-this") {
+            BandLookUp();
+        }
+        else if (dataArr[0] === "movie-this") {
+            MovieLookUp();
         }
         else {
             console.log("Not a valid option, please check the txt file.")
